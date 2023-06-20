@@ -1,0 +1,3046 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+
+  <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for teams.." title="Type in a name"> -->
+  <h2>Team Status</h2>
+  <label for="dropdown">Select an option:</label>
+  <select id="dropdown">
+    <option value="page1">Automation</option>
+    <option value="page2">Builds</option>
+  </select>
+  
+  <div id="page1" class="page active">
+    <nav id="navbar">
+
+      <form>
+        <h3> Select Team:</h3>
+        <select class="dropbtn dropdown-content" id="mySelect" id="myInput" onclick="myFunction()">
+          <option value="All">All</option>
+          <option value="Indoors - Viewer">Indoors - Viewer</option>
+          <option value="Indoors - Space Planner">Indoors - Space Planner</option>
+          <option value="ArcGISIndoorsForAutoCAD">ArcGISIndoorsForAutoCAD</option>
+          <option value="Indoors - Pro">Indoors - Pro</option>
+          <option value="DR">DR</option>
+          <option value="Aviation (Charting)">Aviation (Charting)</option>
+          <option value="Aviation (Airports)">Aviation (Airports)</option>
+          <option value="Workflow Manager">Workflow Manager</option>
+          <option value="GeoEvent">GeoEvent</option>
+          <option value="Velocity">Velocity</option>
+          <option value="Monitor">Monitor</option>
+          <option value="GeoPlanner">GeoPlanner</option>
+          <option value="Redistricting">Redistricting</option>
+          <option value="Maritime">Maritime</option>
+          <option value="Bathymetry">Bathymetry</option>
+          <option value="Topographic Production Tools">Topographic Production Tools</option>
+          <option value="MapsForAdobe">MapsForAdobe</option>
+          <option value="Location Referencing">Location Referencing</option>
+          <option value="IPS Setup">IPS Setup</option>
+
+        </select>
+        <button class="btnsavelaod" onclick="save()">Save</button>
+      </form>
+
+
+    </nav>
+    <table id="myTable">
+      <tr class="header">
+        <th style="width:5%">Teams</th>
+        <th style="width:70%">Automation Tests</th>
+
+      </tr>
+      <tr>
+        <td>Indoors - Viewer </td>
+        <td>
+          <label class="container"><input type="checkbox" value="GUI - Web (Enterprise)" />
+            <span id="text">GUI - Web
+              (Enterprise)</span></label>
+
+          <label class="container"><input type="checkbox" value="viewer GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="viewer GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+
+          <label class="container"><input type="checkbox" value="viewer Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="viewer GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="viewer GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="viewer GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="viewer CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="viewer MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="viewer ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="viewer  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Indoors - Space Planner</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Planner GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="Planner GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="Planner GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+
+
+          <label class="container"><input type="checkbox" value="Planner Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="Planner GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="Planner GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Planner GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="Planner CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="Planner MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Planner ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Planner  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>ArcGISIndoorsForAutoCAD</td>
+        <td>
+          <label class="container"><input type="checkbox" value="AutoCAD GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="AutoCAD GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="AutoCAD GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+
+
+
+          <label class="container"><input type="checkbox" value="AutoCAD Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="AutoCAD GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="AutoCAD GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="AutoCAD GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="AutoCAD CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="AutoCAD ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="AutoCAD  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Indoors - Pro</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Pro GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="Pro GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="Pro GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+
+
+
+          <label class="container"><input type="checkbox" value="Pro Pyunit" />Pyunit</label>
+
+          <label class="container"><input type="checkbox" value="Pro Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="Pro GUI - TestComplete" /> GUI - TestComplete</label>
+          <label class="container"><input type="checkbox" value="Pro GUI - WinAppDriver" /> GUI - WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Pro GP - Python Harness" />GP - Python Harness</label>
+          <label class="container"><input type="checkbox" value="Pro CPPUnit" />CPPUnit</label>
+
+          <label class="container"><input type="checkbox" value="Pro MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Pro ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Pro  GUI - Web (Online)" /> GUI - Web (Online)</label>
+        </td>
+
+
+      </tr>
+      <tr>
+        <td>DR</td>
+        <td>
+          <label class="container"><input type="checkbox" value="DR GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="DR GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="DR GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+
+
+
+
+          <label class="container"><input type="checkbox" value="DR Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="DR GUI - TestComplete" /> GUI - TestComplete</label>
+          <label class="container"><input type="checkbox" value="DR GUI - WinAppDriver" /> GUI - WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="DR GP - Python Harness" />GP - Python Harness</label>
+          <label class="container"><input type="checkbox" value="DR CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="DR MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="DR ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="DR  GUI - Web (Online)" /> GUI - Web (Online)</label>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Aviation (Charting)</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Aviation GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="Aviation GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="Aviation GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="Aviation Pyunit" />Pyunit</label>
+
+          <label class="container"><input type="checkbox" value="Aviation GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="Aviation GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Aviation GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="Aviation CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="Aviation MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Aviation ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Aviation  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Aviation (Airports)</td>
+        <td>
+          <label class="container"><input type="checkbox" value="AVAirports GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="AVAirports GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="AVAirports GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="AVAirports Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="AVAirports GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="AVAirports GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="AVAirports GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="AVAirports CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="AVAirports MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="AVAirports ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="AVAirports  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Workflow Manager</td>
+        <td>
+          <label class="container"><input type="checkbox" value="WorkFlow GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="WorkFlow GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="WorkFlow GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="WorkFlow Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="WorkFlow GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="WorkFlow GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="WorkFlow GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="WorkFlow CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="WorkFlow MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="WorkFlow ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="WorkFlow  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+
+      </tr>
+      <tr>
+        <td>GeoEvent</td>
+        <td>
+          <label class="container"><input type="checkbox" value="GeoEvent GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="GeoEvent GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="GeoEvent GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="GeoEvent Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="GeoEvent GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="GeoEvent GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="GeoEvent GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="GeoEvent CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="GeoEvent MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="GeoEvent ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="GeoEvent  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+
+
+      </tr>
+      <tr>
+        <td>Velocity</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Velocity GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="Velocity GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="Velocity GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="Velocity Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="Velocity GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="Velocity GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Velocity GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="Velocity CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="Velocity MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Velocity ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Velocity  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Monitor</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Monitor GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="Monitor GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="Monitor GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="Monitor Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="Monitor GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="Monitor GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Monitor GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="Monitor CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="Monitor MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Monitor ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Monitor  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>GeoPlanner</td>
+        <td>
+          <label class="container"><input type="checkbox" value="GeoPlanner GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="GeoPlanner GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="GeoPlanner GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="GeoPlanner Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="GeoPlanner GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="GeoPlanner GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="GeoPlanner GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="GeoPlanner CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="GeoPlanner MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="GeoPlanner ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="GeoPlanner  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Redistricting</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Redistricting GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="Redistricting GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="Redistricting GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="Redistricting Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="Redistricting GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="Redistricting GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Redistricting GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="Redistricting CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="Redistricting MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Redistricting ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Redistricting  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Maritime</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Maritime GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="Maritime GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="Maritime GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="Maritime Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="Maritime GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="Maritime GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Maritime GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="Maritime CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="Maritime MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Maritime ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Maritime  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Bathymetry</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Bathymetry GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+          <label class="container"><input type="checkbox" value="Bathymetry GUI - Mobile Android" /> GUI - Mobile
+            Android</label>
+          <label class="container"><input type="checkbox" value="Bathymetry GUI - Mobile iOS" /> GUI - Mobile iOS
+          </label>
+          <label class="container"><input type="checkbox" value="Bathymetry Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="Bathymetry GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="Bathymetry GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Bathymetry GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="Bathymetry CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="Bathymetry MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Bathymetry ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Bathymetry  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Topographic Production Tools</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Topographic GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+            <label class="container"><input type="checkbox" value="Topographic GUI - Mobile Android" /> GUI - Mobile
+              Android</label>
+            <label class="container"><input type="checkbox" value="Topographic GUI - Mobile iOS" /> GUI - Mobile iOS
+            </label>
+            <label class="container"><input type="checkbox" value="Topographic Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="Topographic GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="Topographic GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Topographic GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="Topographic CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="Topographic MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Topographic ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Topographic  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>MapsForAdobe</td>
+        <td>
+          <label class="container"><input type="checkbox" value="Maps GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+            <label class="container"><input type="checkbox" value="Maps GUI - Mobile Android" /> GUI - Mobile
+              Android</label>
+            <label class="container"><input type="checkbox" value="Maps GUI - Mobile iOS" /> GUI - Mobile iOS
+            </label>
+            <label class="container"><input type="checkbox" value="Maps Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="Maps GUI - TestComplete" /> GUI - TestComplete</label>
+          <label class="container"><input type="checkbox" value="Maps GUI - WinAppDriver" /> GUI - WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="Maps GP - Python Harness" />GP - Python Harness</label>
+          <label class="container"><input type="checkbox" value="Maps CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="Maps MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="Maps ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="Maps  GUI - Web (Online)" /> GUI - Web (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Location Referencing</td>
+        <td>
+          <label class="container"><input type="checkbox" value="LR GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+            <label class="container"><input type="checkbox" value="LR GUI - Mobile Android" /> GUI - Mobile
+              Android</label>
+            <label class="container"><input type="checkbox" value="LR GUI - Mobile iOS" /> GUI - Mobile iOS
+            </label>
+            <label class="container"><input type="checkbox" value="LR Pyunit" />Pyunit</label>
+          <label class="container"><input type="checkbox" value="LR GUI - TestComplete" /> GUI - TestComplete</label>
+          <label class="container"><input type="checkbox" value="LR GUI - WinAppDriver" /> GUI - WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="LR GP - Python Harness" />GP - Python Harness</label>
+          <label class="container"><input type="checkbox" value="LR CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="LR MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="LR ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="LR  GUI - Web (Online)" /> GUI - Web (Online)</label>
+        </td>
+      </tr>
+      <tr>
+        <td>IPS Setup</td>
+        <td>
+          <label class="container"><input type="checkbox" value="IPSSetup GUI - Web (Enterprise)" /> GUI - Web
+            (Enterprise)</label>
+
+            <label class="container"><input type="checkbox" value="IPSSetup GUI - Mobile Android" /> GUI - Mobile
+              Android</label>
+            <label class="container"><input type="checkbox" value="IPSSetup GUI - Mobile iOS" /> GUI - Mobile iOS
+            </label>
+            <label class="container"><input type="checkbox" value="IPSSetup Pyunit" /> Pyunit</label>
+          <label class="container"><input type="checkbox" value="IPSSetup GUI - TestComplete" /> GUI -
+            TestComplete</label>
+          <label class="container"><input type="checkbox" value="IPSSetup GUI - WinAppDriver" /> GUI -
+            WinAppDriver</label>
+          <label class="container"><input type="checkbox" value="IPSSetup GP - Python Harness" />GP - Python
+            Harness</label>
+          <label class="container"><input type="checkbox" value="IPSSetup CPPUnit" />CPPUnit</label>
+          <label class="container"><input type="checkbox" value="IPSSetup MVVM" /> MVVM</label>
+          <label class="container"><input type="checkbox" value="IPSSetup ReadyAPI" /> ReadyAPI</label>
+          <label class="container"><input type="checkbox" value="IPSSetup  GUI - Web (Online)" /> GUI - Web
+            (Online)</label>
+        </td>
+      </tr>
+    </table>
+
+
+
+  </div>
+
+
+
+
+  <div id="page2" class="page">
+    <!-- <nav id="navbar1" class="page2navbar">
+
+      <form>
+        <h3> Select Team:</h3>
+        <select class="dropbtn dropdown-content" id="mySelect1" id="myInput1" onclick="myFunction1()">
+          <option value="All">All</option>
+          <option value="IndoorsViewer">IndoorsViewer</option>
+          <option value="IndoorsSpacePlanner">IndoorsSpacePlanner</option>
+          <option value="ArcGISIndoorsForAutoCAD">ArcGISIndoorsForAutoCAD</option>
+          <option value="Indoors - Pro">Indoors-Pro</option>
+          <option value="DR">DR</option>
+          <option value="Aviation (Charting)">Aviation (Charting)</option>
+          <option value="Aviation (Airports)">Aviation (Airports)</option>
+          <option value="Workflow Manager">Workflow Manager</option>
+          <option value="GeoEvent">GeoEvent</option>
+          <option value="Velocity">Velocity</option>
+          <option value="Monitor">Monitor</option>
+          <option value="GeoPlanner">GeoPlanner</option>
+          <option value="Redistricting">Redistricting</option>
+          <option value="Maritime">Maritime</option>
+          <option value="Bathymetry">Bathymetry</option>
+          <option value="Topographic Production Tools">Topographic Production Tools</option>
+          <option value="MapsForAdobe">MapsForAdobe</option>
+          <option value="Location Referencing">Location Referencing</option>
+          <option value="IPS Setup">IPS Setup</option>
+
+        </select>
+        
+      </form>
+
+
+    </nav> -->
+    <button class="btnsavelaodbuild" onclick="save1()">Save</button>
+
+    <table id="myTable1">
+      <tr class="header1" id="checkheader">
+        <th  style="width:50%">Teams</th>
+        <th style="width:15%">Pro(Product Files)</th>
+        <th style="width:15%">Enterprise (Product Files)</th>
+        <th style="width:50%">Mobile Native Apps (iOS + Android)</th>
+        <th style="width:50%">Enterprise</th>
+        <th style="width:50%">Online</th>
+        <th style="width:50%">Mend</th>
+        <th style="width:50%">Veracode</th>
+        <th style="width:50%">Black Duck</th>
+        <th style="width:50%">Setup confidence test</th>
+        <th style="width:50%">Unit test</th>
+        <th style="width:50%">Automated - GUI</th>
+        <th style="width:50%">Feature Confidence test</th>
+        <th style="width:50%">Automated - NonGUI</th>
+        <th style="width:50%">Accessibility</th>
+        <th style="width:50%">ACR</th>
+        <th style="width:50%">i18n</th>
+        <th style="width:50%">LP</th>
+        <!-- <th style="width:70%">Automation Tests</th>
+        <th style="width:70%">Automation Tests</th>
+        <th style="width:70%">Automation Tests</th> -->
+
+      </tr>
+
+      <tr>
+        <td>Indoors-Viewer </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown1">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown2">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown3">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown4">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown5">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown6">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown7">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown8">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown9">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown10">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown11">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown12">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown13">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown14">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown15">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown16">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown17">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+
+      <tr>
+        <td>Indoors-Space Planner</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>ArcGISIndoorsForAutoCAD</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown35">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown36">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown37">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown38">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown39">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown40">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown41">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown42">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown43">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown44">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown45">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown46">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown47">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown47">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown48">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown49">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown50">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Indoors - Pro</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown51">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown52">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown53">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown54">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown55">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown56">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown57">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown58">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown59">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown60">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown61">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown62">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown63">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown64">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown65">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown66">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown67">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>DR</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown68">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown69">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown70">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown71">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown72">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown73">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown74">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown75">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown76">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown77">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown78">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown79">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown80">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown81">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown82">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown83">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown84">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Aviation (Charting)</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown85">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown86">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown87">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown88">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown89">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown90">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown91">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown92">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown93">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown94">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown95">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown96">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown97">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown98">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown99">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown100">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown101">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Aviation (Airports)</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown102">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown103">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown104">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown105">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown106">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown107">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown108">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown109">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown110">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown111">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown112">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown113">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown114">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown115">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown116">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown117">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown118">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Workflow Manager</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown119">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown120">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown121">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown122">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown123">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown124">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown125">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown126">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown127">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown128">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown129">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown130">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown131">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown132">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown133">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown134">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown135">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>GeoEvent</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown136">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown137">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown138">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown139">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown140">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown141">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown142">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown143">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown144">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown145">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown146">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown147">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown148">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown149">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown150">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown151">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown152">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Velocity</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown153">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown154">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown155">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown156">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown157">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown158">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown159">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown160">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown161">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown162">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Monitor</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>GeoPlanner</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Redistricting</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+
+          </select>
+        </td>
+
+      <tr>
+        <td>Maritime</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Bathymetry</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Topographic Production Tools</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>MapsForAdobe</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>Location Referencing</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+      <tr>
+        <td>IPS Setup</td>
+        <td>
+          <select class="status-dropdown container" id="dropdown18">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown19">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown20">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown21">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown22">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown23">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown24">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown25">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown26">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown27">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown28">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown29">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown30">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown31">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown32">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown33">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+        <td>
+          <select class="status-dropdown container" id="dropdown34">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planned">Planned</option>
+          </select>
+        </td>
+
+
+
+    </table>
+    <h2>Page 2 Content</h2>
+    <p>This is the content for Page 2.</p>
+  </div>
+
+
+
+
+</body>
+<!-- <script type="text/javascript">
+   const dropdown = document.getElementById("dropdown");
+    const page1 = document.getElementById("page1");
+    const page2 = document.getElementById("page2");
+
+    // Show default page (Page 1)
+    page1.classList.add("active");
+
+    dropdown.addEventListener("change", function() {
+      if (dropdown.value === "page1") {
+        page1.classList.add("active");
+        page2.classList.remove("active");
+      } else if (dropdown.value === "page2") {
+        page1.classList.remove("active");
+        page2.classList.add("active");
+      }
+    });
+  var checkboxes = document.querySelectorAll('input[type=checkbox]');
+
+  console.log(checkboxes);
+
+  function save() {
+    for (i = 0; i < checkboxes.length; i++) {
+      console.log(checkboxes[i].value)
+      console.log(checkboxes[i].checked)
+      localStorage.setItem(checkboxes[i].value, checkboxes[i].checked);
+    }
+  }
+
+  function load_() {
+    for (i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = localStorage.getItem(checkboxes[i].value) === 'true' ? true : false;
+    }
+  }
+
+  window.onload = function () {
+    for (i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = localStorage.getItem(checkboxes[i].value) === 'true' ? true : false;
+    }
+  }
+
+  function myFunction() {
+    // var x = document.getElementById("mySelect").value;
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("mySelect").value;
+
+    console.log(input);
+    filter = input.toUpperCase();
+    console.log("FILTER"+  filter);
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+
+    if (filter == "ALL") {
+      for (i = 0; i < tr.length; i++) {
+
+        td = tr[i].getElementsByTagName("td")[0];
+        console.log("the value of filter" + filter);
+
+        if (td) {
+
+
+          tr[i].style.display = "";
+         
+        }
+
+
+       
+      }
+
+    }
+    else{
+
+    for (i = 0; i < tr.length; i++) {
+
+      td = tr[i].getElementsByTagName("td")[0];
+      console.log("the value of filter" + filter);
+
+      // if (td) {
+
+      //   txtValue = td.textContent || td.innerText;
+      //   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      //     tr[i].style.display = "";
+      //   } else {
+      //     tr[i].style.display = "none";
+      //   }
+      // }
+
+
+      if (td) {
+        console.log("the value of td.textContent" + td.textContent);
+        console.log("the value of td.innerText" + td.innerText);
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+  }
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+
+
+  
+
+
+// </script> -->
+
+<script src="script.js"></script>
+
+</html>
